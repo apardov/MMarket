@@ -59,7 +59,7 @@ const Login = () => {
   e.preventDefault();
 
   try {
-    const response = await axios.post('https://mini-market-production.up.railway.app//user/login', {
+    const response = await axios.post('https://mini-market-production.up.railway.app/user/login/', {
       email,
       password,
     });
