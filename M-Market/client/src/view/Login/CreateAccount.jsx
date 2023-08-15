@@ -25,7 +25,7 @@ const CreateAccount = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post("https://mini-market-production.up.railway.app/user", formData);
+      const response = await axios.post('https://mini-market-production.up.railway.app/user/', formData);
       await Swal.fire({
         title: `Usuario ${formData.email} creado con éxito`,
         imageUrl: img2,
