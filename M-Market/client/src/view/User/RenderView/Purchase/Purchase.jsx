@@ -25,6 +25,7 @@ function Purchase() {
       products: obj.Prods,
       fecha : [year, month, day]
     }})
+    console.log(infoFiltered);
     setInfoPurchase(infoFiltered);
   }
 
