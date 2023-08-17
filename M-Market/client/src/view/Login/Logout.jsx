@@ -1,10 +1,13 @@
+import {  useNavigate } from "react-router-dom";
 
 const LogOut = () => {
+    const navigate = useNavigate()
 
     const handleLogout = () => {
         localStorage.removeItem("email")
         localStorage.removeItem("userId")
         window.location.reload()
+        navigate("/home")
     }
     return (
         <div>
