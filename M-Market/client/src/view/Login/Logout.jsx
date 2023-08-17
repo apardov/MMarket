@@ -6,7 +6,6 @@ const LogOut = () => {
     const handleLogout = () => {
         localStorage.removeItem("email")
         localStorage.removeItem("userId")
-        navigate("/home")
         window.location.reload()
     }
     return (
