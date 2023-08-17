@@ -58,7 +58,9 @@ const Nav = () => {
           : <Link to="/login">
             <button className="icons"><i className='bx bx-user-circle' ></i></button>
           </Link>}
+          <Link to="/home">
           {access && (<LogOut />)}
+          </Link>
       </div>
     </div>
   )
